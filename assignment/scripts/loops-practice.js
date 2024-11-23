@@ -30,7 +30,7 @@ for (let i = 0; i <= 5; i++) {
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
 
-//We change the condition to i <= 10:
+//We change the condition to 2 <= 10:
 for (let i = 2; i <=10; i+=2) {
   console.log(i);
 }
@@ -38,6 +38,10 @@ for (let i = 2; i <=10; i+=2) {
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
 
+//we change the condition to 5 >= 0:
+for (let i = 5; i >= 0; i--) {
+  console.log(i);
+}
 
 
 
@@ -45,10 +49,12 @@ console.log('STRETCH: countdown from 5 to 0');
 console.log('---- 2. For Of loop ----');
 let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
+
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
-
-
+for (const star of stars) {
+  console.log (star);
+}
 // 3. While loops  
 console.log('---- 3. While loop ----');
 
